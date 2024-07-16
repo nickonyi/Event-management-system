@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 function ScrollToTopOnMount() {
   const { pathname } = useLocation();
+  console.log(pathname);
 
   useEffect(() => {
     window.scrollTo(0, 0);
